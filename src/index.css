@@ -1,0 +1,174 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 250 100% 99%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 262 30% 95%;
+    --secondary-foreground: 262 83% 25%;
+
+    --muted: 250 30% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 270 95% 75%;
+    --accent-foreground: 262 83% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 262 30% 90%;
+    --input: 262 30% 90%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 270 95% 75%;
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 263 70% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Correções específicas para o modo dark */
+.dark {
+  color-scheme: dark;
+}
+
+.dark .bg-gradient-to-br {
+  background: linear-gradient(to bottom right, rgb(30 27 75), rgb(88 28 135), rgb(30 58 138)) !important;
+}
+
+.dark .text-gray-900 {
+  color: rgb(243 244 246) !important;
+}
+
+.dark .text-gray-600 {
+  color: rgb(156 163 175) !important;
+}
+
+.dark .text-gray-500 {
+  color: rgb(107 114 128) !important;
+}
+
+.dark .bg-white {
+  background-color: rgb(31 41 55) !important;
+}
+
+.dark .bg-white\/95 {
+  background-color: rgb(31 41 55 / 0.95) !important;
+}
+
+.dark .bg-white\/60 {
+  background-color: rgb(31 41 55 / 0.6) !important;
+}
+
+.dark .border-gray-200 {
+  border-color: rgb(75 85 99) !important;
+}
+
+.dark .border-gray-300 {
+  border-color: rgb(75 85 99) !important;
+}
+
+.dark .hover\:bg-gray-50:hover {
+  background-color: rgb(55 65 81) !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: rgb(55 65 81) !important;
+}
+
+.dark .bg-purple-50 {
+  background-color: rgb(88 28 135 / 0.1) !important;
+}
+
+.dark .bg-pink-50 {
+  background-color: rgb(219 39 119 / 0.1) !important;
+}
+
+.dark .bg-purple-100 {
+  background-color: rgb(88 28 135 / 0.2) !important;
+}
+
+.dark .text-purple-800 {
+  color: rgb(196 181 253) !important;
+}
+
+.dark .border-purple-200 {
+  border-color: rgb(139 92 246) !important;
+}
+
+.dark .from-purple-50 {
+  --tw-gradient-from: rgb(88 28 135 / 0.1) !important;
+}
+
+.dark .to-pink-50 {
+  --tw-gradient-to: rgb(219 39 119 / 0.1) !important;
+}

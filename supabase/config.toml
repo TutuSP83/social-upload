@@ -1,0 +1,4 @@
+project_id = "tjeayvnrcihxnuydjtzq"
+
+[auth]
+enable_confirmations = false
